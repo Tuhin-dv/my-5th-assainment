@@ -1,0 +1,15 @@
+
+
+.button-disable{
+  background-color:#3751fd36;   
+  color: white;
+  
+
+}
+.notification{
+  font-size: 20px;
+    background-color: #F4F7FF;
+    padding:16px;
+    margin-top: 10px;
+    border-radius: 8px;
+}

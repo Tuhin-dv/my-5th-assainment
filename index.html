@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font-awsm --------------------------------------------------------------->
+    <script src="https://kit.fontawesome.com/e6f2d48746.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="bg-slate-200 pb-12 pt-6">
+    <header class="max-w-[1816] mx-auto">
+        <nav class="bg-white rounded-lg">
+            <!-- parent-div----------------------------------------------- -->
+            <div class="flex justify-between items-center py-5 px-6">
+                <div class="flex gap-3 items-center ">
+                    <img src="assets/Vector (5).svg" alt="">
+                    <h1 class="text-3xl">Dev <span class="font-bold text-[#00303C]">Board</span></h1>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center rounded-full bg-[#F4F7FF] py-4 px-5 gap-2">
+                        <i class="fa-solid text-blue-700 text-3xl fa-square-check"></i>
+                        <h1 class="text-3xl font-bold" id="nav-number">23</h1>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-3 rounded-full">
+                        <img class="cursor-pointer" id="clr-change-btn" src="assets/Group 8.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-[1816] grid grid-cols-4 gap-5 mx-auto mt-5  rounded-lg">
+        <section class="p-6 rounded-xl bg-white col-span-3">
+            <div>
+                <div class="flex justify-between mb-7">
+                    <div class=" bg-[#F4F7FF] rounded-lg p-6 flex items-center gap-4">
+                        <div class="bg-white flex justify-center items-center  size-16 rounded-full">
+                            <i class="fa-solid text-blue-700 text-3xl fa-square-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Task Assigned</p>
+                            <p id="Assigned-number" class="font-bold text-2xl">06</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-6 items-center w-[700px] justify-center rounded-lg bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]" id="other-page">
+                        <img class=" cursor-pointer " src="assets/fi_18577309.svg" alt="">
+                        <p class="text-white text-2xl  cursor-pointer ">Discover Something <br> New Today!</p>
+                    </div>
+                    <div class=" bg-[#F4F7FF] p-6 rounded-lg flex items-center gap-4">
+                        <div class="bg-white flex justify-center items-center  size-16 rounded-full">
+                            <i class="fa-solid text-3xl fa-calendar-days"></i>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Wed ,</p>
+                            <p class="font-bold text-2xl" id="new-date"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed text-slate-200 border-[1.5px]">
+
+            <div>
+                <div class="grid grid-cols-3 gap-8 mt-7">
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">ShopEase</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4 card-title">Fix Mobile Button Issue </h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer  complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-one">Completed
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">CloudSync</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4 card-title">Add Dark Mode</h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer  complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-two" >Completed
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">SwiftPay</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4">Optimize  Home page </h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-three" >Completed
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">Meta</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4">Add new emoji 🤲</h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer  complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-four" >Completed
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">Google LLC</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4">Integrate OpenAI API </h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer  complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-five" >Completed
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <p class="bg-white py-2 px-4 w-fit rounded-lg">Glassdoar</p>
+                        <h1 class="text-2xl font-medium mt-4 mb-4">Improve Job searching </h1>
+                        <p class="bg-white rounded-lg py-2 px-4 w-fit ">Debug using Chrome DevTools, check for
+                            overlappin</p>
+                        <hr class="border-dashed text-slate-200 mt-5 border-[1.5px]">
+                        <div class="flex justify-between mt-7">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <button
+                                class="bg-[#3752FD] cursor-pointer  complete-btn py-2.5 px-5 rounded-lg text-lg font-medium text-white" id="btn-six">Completed
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!----------------------------------- aside-----style-------------------------------------------------------------- -->
+
+        <aside class="bg-white rounded-xl p-7">
+            <div class="flex items-center gap-3 justify-center mt-4">
+                <i class="fa-solid text-2xl fa-arrow-rotate-right"></i>
+                <h1 class="font-semibold text-2xl">Activity Log</h1>
+            </div>
+            <div class="flex justify-center mt-5">
+                <button id="clear-button"
+                    class="bg-[#3752FD] cursor-pointer  mx-auto mb-5 text-center py-2.5 px-5 rounded-lg text-lg font-medium text-white hover:bg-blue-700">
+                    Clear History
+                </button>
+            </div>
+            <hr class="border-dashed text-slate-200 border-[1.5px]">
+           <div id="message-container">
+           </div>
+        </aside>
+
+    </main>
+    <script src="js/qna.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
